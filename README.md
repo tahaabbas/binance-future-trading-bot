@@ -34,7 +34,7 @@ python run_bot.py &lt;Symbol> &lt;Short EMA Period> &lt;Long EMA Period> &lt;Int
 <hr>
 <b>The Above script was only tested on Ubuntu 18.04.6 LTS Distribution</b>
 
-# TODO
+# Todo
 In the current implementation, I haven't provided a way to specify the order quantity through function arguments. Instead, you can manually adjust the order quantity within the <b>place_order</b> function. I recognize this limitation, and I plan to enhance this in the next update by allowing the order quantity to be passed as an argument to the function.
 
 # Risk Warning
