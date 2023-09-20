@@ -23,19 +23,16 @@ This bot is executed from the command line and requires the trading pair symbol,
 <code>pip install python-binance requests talib numpy</code>
 
 # Run
-python run_bot.py &lt;Symbol> &lt;Short EMA Period> &lt;Long EMA Period> &lt;Interval> &lt;Leverage>
+python run_bot.py &lt;Symbol> &lt;Short EMA Period> &lt;Long EMA Period> &lt;Interval> &lt;Leverage> &lt;order size>
 
 <b>Example:</b>
-<code>python run_bot.py BTCUSDT 8 20 1h 10</code>
+<code>python run_bot.py BTCUSDT 8 20 1h 10 2.5</code>
 
 <b>To Run in Background</b>
-<code>nohup python run_bot.py BTCUSDT 8 20 1h 10 &</code>
+<code>nohup python run_bot.py BTCUSDT 8 20 1h 10 2.5 &</code>
 
 <hr>
 <b>The Above script was only tested on Ubuntu 18.04.6 LTS Distribution</b>
-
-# Todo
-In the current implementation, I haven't provided a way to specify the order quantity through function arguments. Instead, you can manually adjust the order quantity within the <b>place_order</b> function. I recognize this limitation, and I plan to enhance this in the next update by allowing the order quantity to be passed as an argument to the function.
 
 # Risk Warning
 Remember, while the EMA crossover strategy is popular, it's essential to combine it with other indicators or methods for more robust trading signals. Always ensure you are comfortable with the risks before running any trading bot live.
