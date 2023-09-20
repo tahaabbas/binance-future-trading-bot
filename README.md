@@ -46,7 +46,7 @@ Donate with Bitcoin (BTC)</p>
 <div class="btc-donation-container" style="padding: 20px; width: 91%; text-align: center;">
   <h3>Donate with BTC</h3>
   <p>Scan the QR code or send your donation to the address below:</p>
-  <img src="//tdrintl.com/wp-content/uploads/2023/09/canvas_btc.png" alt="BTC QR Code" style="width: 80px; height: 80px; margin-bottom: 20px;">
+  <img src="https://tdrintl.com/wp-content/uploads/2023/09/canvas_btc.png" alt="BTC QR Code" style="width: 80px; height: 80px; margin-bottom: 20px;">
   <p><strong>BTC Address:</strong></p>
   <p style="word-wrap: break-word;" class="walletAddress">15AZJpmYEV2Q9fvf7DvQgTHcFgmNg2UcPz</p>
 </div>
