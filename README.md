@@ -20,19 +20,32 @@ This bot is executed from the command line and requires the trading pair symbol,
 - Pip
 
 # Installation
-<code>pip install python-binance requests talib numpy</code>
+<b>TA-Lib Installation</b>
+<pre>
+sudo apt-get update
+sudo apt-get install build-essential wget
+wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+tar -xzf ta-lib-0.4.0-src.tar.gz
+cd ta-lib/
+./configure --prefix=/usr
+make
+sudo make install
+</pre>
+
+<b>Finally Run</b>
+<pre>pip install python-binance requests ta-lib numpy</pre>
 
 # Run
 python run_bot.py &lt;Symbol> &lt;Short EMA Period> &lt;Long EMA Period> &lt;Interval> &lt;Leverage> &lt;order size>
 
 <b>Example:</b>
-<code>python run_bot.py BTCUSDT 8 20 1h 10 2.5</code>
+<code>python run_bot.py BTCUSDT 9 30 1h 10 2.5</code>
 
 <b>To Run in Background</b>
-<code>nohup python run_bot.py BTCUSDT 8 20 1h 10 2.5 &</code>
+<code>nohup python run_bot.py BTCUSDT 9 30 1h 10 2.5 &</code>
 
 <hr>
-<b>The Above script was only tested on Ubuntu 18.04.6 LTS Distribution</b>
+<b>The Above script was only tested on Ubuntu 20.04.4 LTS Distribution</b>
 
 # Risk Warning
 Remember, while the EMA crossover strategy is popular, it's essential to combine it with other indicators or methods for more robust trading signals. Always ensure you are comfortable with the risks before running any trading bot live.
